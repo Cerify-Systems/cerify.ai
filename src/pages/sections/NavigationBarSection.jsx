@@ -29,16 +29,30 @@ export const NavigationBarSection = () => {
       </button>
 
       <div className="inline-flex items-center gap-4 md:gap-[69px] relative flex-[0_0_auto]">
-        {navItems.map((item, index) => (
-          <button
-            key={index}
-            type="button"
-            className={`relative h-[29px] mt-[-1.00px] [font-family:'Inter',Helvetica] font-medium text-[#2c00ca] text-lg md:text-xl tracking-[0] leading-[normal] whitespace-nowrap bg-transparent border-none cursor-pointer hover:underline ${item.width}`}
-            onClick={() => setLocation(item.route)}
-          >
-            {item.label}
-          </button>
-        ))}
+        {navItems.map((item, index) => {
+          if (item.label === "Tool") {
+            return (
+              <button
+                key={index}
+                type="button"
+                className={`relative h-[29px] mt-[-1.00px] [font-family:'Inter',Helvetica] font-medium text-[#2c00ca] text-lg md:text-xl tracking-[0] leading-[normal] whitespace-nowrap bg-transparent border-none cursor-pointer hover:underline ${item.width}`}
+                onClick={() => window.open("http://cerify.ai/:5000", "_blank")}
+              >
+                {item.label}
+              </button>
+            );
+          }
+          return (
+            <button
+              key={index}
+              type="button"
+              className={`relative h-[29px] mt-[-1.00px] [font-family:'Inter',Helvetica] font-medium text-[#2c00ca] text-lg md:text-xl tracking-[0] leading-[normal] whitespace-nowrap bg-transparent border-none cursor-pointer hover:underline ${item.width}`}
+              onClick={() => setLocation(item.route)}
+            >
+              {item.label}
+            </button>
+          );
+        })}
       </div>
     </nav>
   );
