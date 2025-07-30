@@ -36,7 +36,7 @@ export const NavigationBarSection = () => {
                 key={index}
                 type="button"
                 className={`relative h-[29px] mt-[-1.00px] [font-family:'Inter',Helvetica] font-medium text-[#2c00ca] text-lg md:text-xl tracking-[0] leading-[normal] whitespace-nowrap bg-transparent border-none cursor-pointer hover:underline ${item.width}`}
-                onClick={() => window.open("http://cerify.ai/:5000", "_blank")}
+                onClick={() => window.open("http://cerify.iitd.ac.in", "_blank")}
               >
                 {item.label}
               </button>
