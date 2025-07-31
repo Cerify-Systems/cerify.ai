@@ -2,7 +2,7 @@ import React from "react";
 import { DeploySmartContractsSection } from "./sections/DeploySmartContractsSection";
 import { DetectionProcessSection } from "./sections/DetectionProcessSection";
 import { HeroBannerSection } from "./sections/HeroBannerSection";
-import { KeyFeaturesSection } from "./sections/KeyFeaturesSection";
+import { NeedForCerifySection } from "./sections/NeedForCerifySection";
 import { NavigationBarSection } from "./sections/NavigationBarSection";
 import { ProcessStepsSection } from "./sections/ProcessStepsSection";
 import { SiteFooterSection } from "./sections/SiteFooterSection";
@@ -14,7 +14,7 @@ export const DesktopModified = () => {
       <div className="bg-white w-screen relative overflow-x-hidden">
         <NavigationBarSection />
         <HeroBannerSection />
-        <KeyFeaturesSection />
+        <NeedForCerifySection />
         <ProcessStepsSection />
         <DetectionProcessSection />
         <UserRatingsSection />
