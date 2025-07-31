@@ -28,22 +28,22 @@ export const UserRatingsSection = () => {
   ];
 
   return (
-    <section className="flex flex-col w-full items-center gap-[32px] md:gap-[52px] py-8 md:py-12 relative px-4">
-      <h2 className="font-bold text-[24px] md:text-[32px] text-center text-black [font-family:'Atkinson_Hyperlegible',Helvetica] tracking-[0] leading-normal">
+    <section className="flex flex-col w-full items-center gap-[32px] md:gap-[52px] pt-4 md:pt-6 pb-8 md:pb-12 relative px-4">
+      <h2 className="font-bold text-[24px] md:text-[32px] text-center text-[#0A4FD7] [font-family:'Atkinson_Hyperlegible',Helvetica] tracking-[0] leading-normal">
         TRUSTED BY INDUSTRY EXPERTS
       </h2>
 
-      <div className="w-full bg-[#2c00ca] rounded-[12px] py-8 md:py-12 px-4 md:px-8">
-        <div className="flex flex-col md:flex-row justify-center gap-[25px] max-w-[1200px] mx-auto">
+      <div className="w-screen bg-[#0A4FD7] py-8 md:py-12 px-4 md:px-8">
+        <div className="flex flex-col md:flex-row justify-center gap-[25px] max-w-[1400px] mx-auto">
           {testimonials.map((testimonial, index) => (
             <Card
               key={index}
-              className="w-full max-w-[350px] h-auto min-h-[270px] bg-white rounded-[26px] shadow-[4px_6px_10px_#00000059] border-none mx-auto"
+              className="w-full max-w-[430px] h-auto min-h-[270px] bg-white rounded-[26px] shadow-[4px_6px_10px_#00000059] border-none mx-auto"
             >
               <CardContent className="p-6 relative h-full">
-                <div className="flex items-center gap-2 mb-4">
+                <div className="flex items-center gap-1 mb-4">
                   <img
-                    className="w-[20px] h-[15px]"
+                    className="w-[25px] h-[20px]"
                     alt="Quote icon"
                     src="/figmaAssets/vector.svg"
                   />
@@ -51,7 +51,7 @@ export const UserRatingsSection = () => {
                   {[...Array(5)].map((_, i) => (
                     <svg
                       key={i}
-                      className="w-5 h-5"
+                      className="w-6 h-6"
                       viewBox="0 0 24 24"
                       fill="#FFD700"
                       xmlns="http://www.w3.org/2000/svg"
@@ -61,16 +61,16 @@ export const UserRatingsSection = () => {
                   ))}
                 </div>
 
-                <p className="[font-family:'Inter',Helvetica] font-medium italic text-[#2c00ca] text-sm md:text-base tracking-[0] leading-normal mb-6 min-h-[100px] md:min-h-[120px]">
+                <p className="[font-family:'Inter',Helvetica] font-normal italic text-[#0A4FD7] text-sm md:text-base tracking-[0] leading-normal mb-6 min-h-[100px] md:min-h-[120px] mt-8 ml-4">
                   {testimonial.quote}
                 </p>
 
-                <div className="absolute bottom-6 left-6 [font-family:'Inter',Helvetica]">
-                  <p className="font-medium text-black text-sm leading-[17px]">
+                <div className="absolute bottom-10 left-10 [font-family:'Inter',Helvetica]">
+                  <p className="font-medium text-[#4B5563] text-sm leading-[17px]">
                     {testimonial.position}
                   </p>
                   {testimonial.organization && (
-                    <p className="font-medium text-[#2c00ca] text-xs leading-[17px]">
+                    <p className="font-medium text-[#0A4FD7] text-xs leading-[17px]">
                       {testimonial.organization}
                     </p>
                   )}
