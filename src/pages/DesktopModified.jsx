@@ -1,4 +1,5 @@
 import React from "react";
+import { CerifySolutionSection } from "./sections/CerifySolutionSection";
 import { DeploySmartContractsSection } from "./sections/DeploySmartContractsSection";
 import { DetectionProcessSection } from "./sections/DetectionProcessSection";
 import { HeroBannerSection } from "./sections/HeroBannerSection";
@@ -15,6 +16,7 @@ export const DesktopModified = () => {
         <NavigationBarSection />
         <HeroBannerSection />
         <NeedForCerifySection />
+        <CerifySolutionSection />
         <ProcessStepsSection />
         <DetectionProcessSection />
         <UserRatingsSection />
