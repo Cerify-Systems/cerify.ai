@@ -91,7 +91,7 @@ export const CerifySolutionSection = () => {
       </div>
 
         {/* CTA Button & Note */}
-        <div className="w-full flex flex-col items-center justify-center mt-16">
+        <div className="w-full flex flex-col items-center justify-center mt-8">
         <button
             className="bg-[#3DFE90] text-[#111] font-semibold text-lg md:text-xl rounded-xl px-8 py-4 md:px-16 md:py-5 shadow transition hover:brightness-95 focus:outline-none [font-family:'Inter',Helvetica]"
             style={{ minWidth: "min(320px, 90vw)", maxWidth: "420px" }}
