@@ -72,8 +72,6 @@ export const DetectionProcessSection = () => {
 
   return (
     <section className="relative w-full py-16 mt-4">
-      {/* Background blur effect */}
-      <div className="absolute w-full h-[280px] bottom-0 bg-[#aa96f1] blur-[300px] opacity-50" />
 
       {/* Section header */}
       <div className="relative max-w-8xl mx-auto px-4">
@@ -209,6 +207,21 @@ export const DetectionProcessSection = () => {
           </div>
         </div>
       </div>
+      
+
+      {/* CTA Button & Note */}
+        <div className="w-full flex flex-col items-center justify-center mt-16 z-30">
+        <button
+            className="bg-[#3DFE90] text-[#111] font-semibold text-lg md:text-xl rounded-xl px-8 py-4 md:px-16 md:py-5 shadow transition hover:brightness-95 focus:outline-none [font-family:'Inter',Helvetica]"
+            style={{ minWidth: "min(320px, 90vw)", maxWidth: "420px" }}
+        >
+            Sign Up Now
+        </button>
+        <span className="text-[#0A4FD7] font-semibold text-base md:text-lg mt-4 [font-family:'Inter',Helvetica] text-center">
+            Beta access is limited
+        </span>
+        </div>
+
     </section>
   );
 };
