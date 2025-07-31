@@ -1,110 +1,111 @@
 import React from "react";
 
 export const SiteFooterSection = () => {
-  // Social media links data
   const socialLinks = [
-    {
-      name: "LinkedIn",
-      icon: "/figmaAssets/linkedin.svg",
-      width: "23.23px",
-      height: "21.78px",
-    },
-    {
-      name: "Twitter",
-      icon: "/figmaAssets/vector-10.svg",
-      width: "23px",
-      height: "23px",
-    },
-    {
-      name: "Telegram",
-      icon: "/figmaAssets/telegram.svg",
-      width: "23px",
-      height: "21px",
-    },
+    { name: "LinkedIn", icon: "/figmaAssets/linkedin.svg" },
+    { name: "Twitter", icon: "/figmaAssets/vector-10.svg" },
+    { name: "Telegram", icon: "/figmaAssets/telegram.svg" },
   ];
 
-  // About section links
-  const aboutLinks = [
-    { name: "Security Audits", width: "125px" },
-    { name: "Compliance Reports", width: "155px" },
-    { name: "API Access", width: "116px" },
-    { name: "Documentation", width: "125px" },
+  const auditLinks = [
+    "Instant Audit",
+    "Login",
+    "Sign Up",
   ];
-
-  // Company section links
   const companyLinks = [
-    { name: "About", width: "71px" },
-    { name: "Careers", width: "71px" },
-    { name: "Blog", width: "71px" },
-    { name: "Contact", width: "71px" },
+    "About",
+    "Careers",
+    "Blog",
+    "Contact",
+  ];
+  const legalLinks = [
+    "Disclaimer",
+    "Privacy Policy",
+    "Cookie Policy",
+    "Terms and Conditions",
   ];
 
   return (
-    <footer className="w-full bg-[#2c00ca] rounded-[30px_30px_0px_0px] overflow-hidden shadow-[0px_-10px_20px_4px_#00000033] py-12 md:py-28 px-4 md:px-20 relative">
-      <div className="flex flex-col md:flex-row justify-between gap-12 md:gap-16 lg:gap-24">
-        {/* Top section with logo, tagline and social links */}
-        <div className="flex flex-col items-center md:items-start md:flex-1 md:max-w-[500px]">
+    <footer className="w-full bg-[#0A4FD7] rounded-t-[30px] overflow-hidden shadow-[0px_-10px_20px_4px_#00000033] pt-10 md:pt-20 pb-24 md:pb-48 px-4 md:px-12">
+      <div className="max-w-[1440px] mx-auto flex flex-col md:flex-row justify-between items-start gap-12 md:gap-0">
+        {/* Left: Logo, tagline, socials */}
+        <div className="flex flex-col items-center md:items-start flex-1">
           <img
-            className="w-[280px] md:w-[399px] h-[72px] md:h-[102px]"
+            className="w-[240px] md:w-[340px] h-[62px] md:h-[110px] mb-4"
             alt="Cerify Logo"
             src="/figmaAssets/vector-5.svg"
           />
-
-          <p className="w-full max-w-[416px] mt-6 md:mt-8 [font-family:'Inter',Helvetica] font-medium text-white text-lg md:text-xl text-center md:text-left">
-            the first AI-Powered Smart Contract Verification engine
+          <p className="text-white text-base md:text-medium [font-family:'Inter',Helvetica] mb-6 text-center md:text-left max-w-[500px]">
+            The First AI-Powered Smart Contract Verification Engine
           </p>
-
-          <div className="flex items-center gap-7 mt-6 md:mt-8">
-            {socialLinks.map((link, index) => (
+          <div className="flex items-center gap-6">
+            {socialLinks.map((link, idx) => (
               <button
-                key={index}
+                key={idx}
                 type="button"
                 aria-label={link.name}
-                className="hover:opacity-80 transition-opacity bg-transparent border-none cursor-pointer p-0"
+                className="hover:opacity-80 transition-opacity bg-transparent border-none p-0 cursor-pointer"
+                onClick={() => { /* TODO: Add social link logic here */ }}
               >
                 <img
-                  className="w-[20px] h-[20px] md:w-[23px] md:h-[23px]"
-                  alt={link.name}
                   src={link.icon}
+                  alt={link.name}
+                  className="w-[23px] h-[23px]"
                 />
               </button>
             ))}
           </div>
         </div>
 
-        {/* Navigation links section */}
-        <div className="flex flex-col md:flex-row gap-8 md:gap-16 lg:gap-24 mt-8 md:mt-0 md:flex-shrink-0">
-          {/* About section */}
-          <div className="flex flex-col">
-            <h3 className="[font-family:'Inter',Helvetica] font-semibold text-white text-xl md:text-2xl mb-4 md:mb-5 text-center md:text-left">
-              About
-            </h3>
-            <div className="flex flex-col space-y-4 md:space-y-[27px]">
-              {aboutLinks.map((link, index) => (
+        {/* Right: Navigation columns */}
+        <div className="flex flex-col md:flex-row gap-10 md:gap-20 w-full md:w-auto justify-between mt-12 md:mt-0">
+          {/* Audit */}
+          <div className="flex flex-col items-center md:items-start">
+            <h3 className="text-white font-semibold text-lg md:text-xl mb-4 [font-family:'Inter',Helvetica]">Audit</h3>
+            <div className="flex flex-col gap-3">
+              {auditLinks.map((name, idx) => (
                 <button
-                  key={index}
+                  key={idx}
                   type="button"
-                  className="[font-family:'Inter',Helvetica] font-medium text-white text-sm md:text-base hover:underline text-center md:text-left bg-transparent border-none cursor-pointer"
+                  className="text-white text-base [font-family:'Inter',Helvetica] hover:underline text-center md:text-left bg-transparent border-none p-0 cursor-pointer"
+                  aria-label={name}
+                  onClick={() => { /* TODO: Add navigation logic here */ }}
                 >
-                  {link.name}
+                  {name}
                 </button>
               ))}
             </div>
           </div>
-
-          {/* Company section */}
-          <div className="flex flex-col">
-            <h3 className="[font-family:'Inter',Helvetica] font-semibold text-white text-xl md:text-2xl mb-4 md:mb-5 text-center md:text-left">
-              Company
-            </h3>
-            <div className="flex flex-col space-y-4 md:space-y-[27px]">
-              {companyLinks.map((link, index) => (
+          {/* Company */}
+          <div className="flex flex-col items-center md:items-start">
+            <h3 className="text-white font-semibold text-lg md:text-xl mb-4 [font-family:'Inter',Helvetica]">Company</h3>
+            <div className="flex flex-col gap-3">
+              {companyLinks.map((name, idx) => (
                 <button
-                  key={index}
+                  key={idx}
                   type="button"
-                  className="[font-family:'Inter',Helvetica] font-medium text-white text-sm md:text-base hover:underline text-center md:text-left bg-transparent border-none cursor-pointer"
+                  className="text-white text-base [font-family:'Inter',Helvetica] hover:underline text-center md:text-left bg-transparent border-none p-0 cursor-pointer"
+                  aria-label={name}
+                  onClick={() => { /* TODO: Add navigation logic here */ }}
                 >
-                  {link.name}
+                  {name}
+                </button>
+              ))}
+            </div>
+          </div>
+          {/* Legal */}
+          <div className="flex flex-col items-center md:items-start">
+            <h3 className="text-white font-semibold text-lg md:text-xl mb-4 [font-family:'Inter',Helvetica]">Legal</h3>
+            <div className="flex flex-col gap-3">
+              {legalLinks.map((name, idx) => (
+                <button
+                  key={idx}
+                  type="button"
+                  className="text-white text-base [font-family:'Inter',Helvetica] hover:underline text-center md:text-left bg-transparent border-none p-0 cursor-pointer"
+                  aria-label={name}
+                  onClick={() => { /* TODO: Add navigation or modal logic here */ }}
+                >
+                  {name}
                 </button>
               ))}
             </div>
