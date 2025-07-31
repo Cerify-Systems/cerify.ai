@@ -6,12 +6,12 @@ export const NavigationBarSection = () => {
 
   const navItems = [
     { label: "About", route: "/about" },
-    { label: "Tool", route: "/tool" },
+    { label: "Audit Now", route: "/tool" },
     { label: "Contact Us", route: "/contact" },
   ];
 
   return (
-    <nav className="flex w-full h-[81px] items-center justify-between px-4 md:px-[73px] py-[18px] bg-white rounded-b-[26px] shadow-[0_4px_4px_0_rgba(44,0,202,0.25)] relative z-20 border-b-4" style={{ borderColor: "rgba(44,0,202,0.4)" }}>
+    <nav className="absolute top-0 left-0 w-full h-[81px] flex items-center justify-between px-4 md:px-[73px] py-[18px] bg-white rounded-b-[26px] shadow-[0_4px_4px_0_rgba(44,0,202,0.25)] z-20 border-b-4" style={{ borderColor: "rgba(44,0,202,0.4)" }}>
       {/* Logo */}
       <button
         type="button"
@@ -29,7 +29,7 @@ export const NavigationBarSection = () => {
       {/* Navigation Links */}
       <div className="flex items-center gap-8 md:gap-[69px]">
         {navItems.map((item, index) => {
-          if (item.label === "Tool") {
+          if (item.label === "Audit Now") {
             return (
               <button
                 key={index}

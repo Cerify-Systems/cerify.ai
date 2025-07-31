@@ -11,7 +11,7 @@ import { UserRatingsSection } from "./sections/UserRatingsSection";
 export const DesktopModified = () => {
   return (
     <div className="bg-white flex flex-col items-center w-full min-h-screen">
-      <div className="bg-white w-full max-w-[1440px] relative overflow-x-hidden">
+      <div className="bg-white w-screen relative overflow-x-hidden">
         <NavigationBarSection />
         <HeroBannerSection />
         <KeyFeaturesSection />
