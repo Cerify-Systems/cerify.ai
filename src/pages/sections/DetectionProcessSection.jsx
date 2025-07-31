@@ -71,21 +71,21 @@ export const DetectionProcessSection = () => {
   ];
 
   return (
-    <section className="relative w-full py-16 mt-16">
+    <section className="relative w-full py-16 mt-4">
       {/* Background blur effect */}
       <div className="absolute w-full h-[280px] bottom-0 bg-[#aa96f1] blur-[300px] opacity-50" />
 
       {/* Section header */}
-      <div className="relative max-w-6xl mx-auto px-4">
-        <h2 className="font-bold text-[32px] text-black font-['Atkinson_Hyperlegible',Helvetica] mb-4 text-center">
-          WHAT WE DETECT ?
+      <div className="relative max-w-8xl mx-auto px-4">
+        <h2 className="font-bold text-[32px] text-[#0A4FD7] font-['Atkinson_Hyperlegible',Helvetica] mb-4 text-center">
+          COMPREHENSIVE VULNERABILITY COVERAGE
         </h2>
 
-        <h3 className="font-semibold text-xl text-[#2c00ca] font-['Inter',Helvetica] mb-8 text-center">
-          Comprehensive Vulnerability Coverage
+        <h3 className="font-semibold text-xl text-[#4B5563] font-['Inter',Helvetica] mb-8 text-center">
+          What We Detect?
         </h3>
 
-        <p className="font-semibold text-[28px] text-[#2c00ca] text-center font-['Inter',Helvetica] mb-12 max-w-4xl mx-auto">
+        <p className="font-semibold text-[20px] text-[#4B5563] text-center font-['Inter',Helvetica] mb-12 max-w-6xl mx-auto">
           Cerify is the only platform combining AI-powered detection, automated
           patching, and built-in compliance alignment at developer-friendly
           pricing.
@@ -95,7 +95,7 @@ export const DetectionProcessSection = () => {
         <div className="space-y-6">
           {/* Desktop Table View */}
           <div className="hidden lg:block">
-            <Card className="relative border-2 border-[#2c00ca]/20 rounded-[26px] overflow-hidden shadow-lg">
+            <Card className="relative w-full max-w-7xl mx-auto border-2 border-[#2c00ca]/20 rounded-[26px] overflow-hidden shadow-lg">
               <CardContent className="p-0">
                 <Table>
                   <TableHeader>
@@ -104,7 +104,7 @@ export const DetectionProcessSection = () => {
                         Feature
                       </TableHead>
                       <TableHead className="py-6 px-4 font-bold text-lg text-[#2c00ca] font-['Inter',Helvetica] text-center">
-                        <div className="bg-[#3dfe90] text-black px-3 py-1 rounded-full text-sm font-bold">
+                        <div className="bg-[#3dfe90] text-black px-2 py-1 rounded-full text-sm font-bold w-40 mx-auto">
                           Cerify
                         </div>
                       </TableHead>
