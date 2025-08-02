@@ -74,7 +74,7 @@ export const DetectionProcessSection = () => {
     <section className="relative w-full py-16 mt-4">
 
       {/* Section header */}
-      <div className="relative max-w-8xl mx-auto px-4">
+      <div className="relative max-w-8xl mx-auto px-fluid">
         <h2 className="font-bold text-[32px] text-[#0A4FD7] font-['Atkinson_Hyperlegible',Helvetica] mb-4 text-center">
           COMPREHENSIVE VULNERABILITY COVERAGE
         </h2>

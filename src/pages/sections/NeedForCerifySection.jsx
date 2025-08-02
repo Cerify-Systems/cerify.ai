@@ -14,7 +14,7 @@ export const NeedForCerifySection = () => {
       </p>
 
       {/* Circles */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-20 md:gap-28 w-full px-4 md:px-0 mt-2 md:mt-6 mb-6 md:mb-16">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-20 md:gap-28 w-full px-fluid mt-2 md:mt-6 mb-6 md:mb-16">
         {/* Circle 1 */}
         <div className="relative flex flex-col items-center justify-center">
           <img
@@ -60,7 +60,7 @@ export const NeedForCerifySection = () => {
       </div>
 
       {/* Cerify Features Section */}
-      <div className="flex flex-col md:flex-row w-full max-w-[1400px] mx-auto px-4 md:px-0 gap-8 md:gap-12">
+      <div className="flex flex-col md:flex-row w-full max-w-[1400px] mx-auto px-fluid 2xl:px-0 gap-8 md:gap-12">
       {/* Left Text */}
       <div className="flex-1 flex items-start justify-center mb-8 md:mb-0">
         <p className="text-[1.1rem] md:text-[1.25rem] leading-snug [font-family:'Inter',Helvetica]">

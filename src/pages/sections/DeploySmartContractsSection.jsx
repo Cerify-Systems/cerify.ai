@@ -20,7 +20,7 @@ export const DeploySmartContractsSection = () => {
       </div>
 
       {/* Main content container */}
-      <div className="relative w-full max-w-[1440px] flex flex-col items-center">
+      <div className="relative w-full max-w-[1440px] flex flex-col items-center px-fluid">
         {/* Heading */}
         <h2 className="font-bold text-[#0A4FD7] text-[64px] text-center [font-family:'Atkinson_Hyperlegible',Helvetica]">
           Ready to Deploy Fearlessly?

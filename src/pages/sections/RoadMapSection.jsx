@@ -33,7 +33,7 @@ export const RoadMapSection = () => {
 
   return (
     <section className="relative w-full py-16 bg-white">
-      <div className="max-w-7xl mx-auto px-4 md:px-8">
+      <div className="max-w-7xl mx-auto px-4 px-fluid">
         <h2 className="text-left mb-16 font-['Atkinson_Hyperlegible',Helvetica] font-bold text-[#2c00ca] text-2xl md:text-4xl tracking-[0] leading-[normal]">
           ROAD MAP<br />SNAPSHOT
         </h2>

@@ -8,6 +8,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      spacing: {
+        'fluid': 'clamp(16px,8vw,120px)',
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",

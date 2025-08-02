@@ -50,7 +50,7 @@ export const ProcessStepsSection = () => {
   ];
 
   return (
-    <section className="relative w-full md:py-4 px-4">
+    <section className="relative w-full md:py-4 px-fluid">
       <div className="container mx-auto max-w-6xl">
         <h2 className="font-['Atkinson_Hyperlegible',Helvetica] font-bold text-[#0A4FD7] text-[24px] md:text-[32px] tracking-[0] leading-normal mb-4 text-center">
           FROM UPLOAD TO CERTIFICATION IN MINUTES

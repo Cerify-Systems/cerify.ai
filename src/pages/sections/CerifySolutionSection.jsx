@@ -13,7 +13,7 @@ export const CerifySolutionSection = () => {
 
       {/* Features Card */}
       <div
-        className="w-full max-w-[1400px] bg-[#F8F9FB] rounded-2xl flex flex-col items-center px-4 py-6 md:px-10 md:py-10"
+        className="w-full max-w-[1400px] bg-[#F8F9FB] rounded-2xl flex flex-col items-center px-fluid md:py-10"
         style={{
             boxShadow: "0 12px 24px -8px rgba(0,0,0,0.18)"
         }}

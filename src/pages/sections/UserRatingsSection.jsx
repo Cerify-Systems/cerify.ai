@@ -28,12 +28,12 @@ export const UserRatingsSection = () => {
   ];
 
   return (
-    <section className="flex flex-col w-full items-center gap-[32px] md:gap-[52px] pt-4 md:pt-6 pb-8 md:pb-12 relative px-4">
+    <section className="flex flex-col w-full items-center gap-[32px] md:gap-[52px] pt-4 md:pt-6 pb-8 md:pb-12 relative px-fluid">
       <h2 className="font-bold text-[24px] md:text-[32px] text-center text-[#0A4FD7] [font-family:'Atkinson_Hyperlegible',Helvetica] tracking-[0] leading-normal">
         TRUSTED BY INDUSTRY EXPERTS
       </h2>
 
-      <div className="w-screen bg-[#0A4FD7] py-8 md:py-12 px-4 md:px-8">
+      <div className="w-screen bg-[#0A4FD7] py-8 md:py-12 px-fluid">
         <div className="flex flex-col md:flex-row justify-center gap-[25px] max-w-[1400px] mx-auto">
           {testimonials.map((testimonial, index) => (
             <Card
