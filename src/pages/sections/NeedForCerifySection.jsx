@@ -6,25 +6,25 @@ export const NeedForCerifySection = () => {
       className="relative w-screen flex flex-col items-center justify-center bg-white"
     >
       {/* Heading */}
-      <h2 className="font-bold text-[#0A4FD7] text-[2rem] md:text-[2.5rem] text-center leading-tight [font-family:'Atkinson_Hyperlegible',Helvetica] mt-[60px] md:mt-[80px]">
+      <h2 className="font-bold text-[#0A4FD7] text-[2rem] md:text-[2.5rem] text-center leading-tight [font-family:'Atkinson_Hyperlegible',Helvetica] mt-[60px] md:mt-[80px] px-fluid">
         THE NEED FOR CERIFY
       </h2>
-      <p className="font-semibold text-[#6B7280] text-lg md:text-xl text-center mt-2 mb-10 [font-family:'Inter',Helvetica]">
+      <p className="font-semibold text-[#6B7280] text-lg md:text-xl text-center mt-2 mb-10 [font-family:'Inter',Helvetica] px-fluid">
         Smart Contract Vulnerabilities are Crushing Web3
       </p>
 
       {/* Circles */}
-      <div className="flex flex-col md:flex-row items-center justify-center gap-20 md:gap-28 w-full px-fluid mt-2 md:mt-6 mb-6 md:mb-16">
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 md:gap-28 w-full px-fluid mt-2 md:mt-6 mb-6 md:mb-16">
         {/* Circle 1 */}
         <div className="relative flex flex-col items-center justify-center">
           <img
             src="/figmaAssets/circle.png"
             alt="$7.9B"
-            className="w-[220px] md:w-[320px] h-[220px] md:h-[320px] object-contain"
+            className="w-[200px] md:w-[320px] h-[200px] md:h-[320px] object-contain"
           />
           <div className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full pointer-events-none">
-            <span className="font-semibold text-[#2C00CA] text-[3rem] md:text-[4rem] [font-family:'Inter',Helvetica] mt-[5px] md:mt-[20px]">$7.9B</span>
-            <span className="font-semibold text-[#2C00CA] text-base md:text-m text-center mt-2 [font-family:'Inter',Helvetica]">
+            <span className="font-semibold text-[#2C00CA] text-[2rem] md:text-[4rem] [font-family:'Inter',Helvetica] mt-[5px] md:mt-[20px]">$7.9B</span>
+            <span className="font-semibold text-[#2C00CA] text-xs md:text-base text-center mt-2 [font-family:'Inter',Helvetica]">
               Lost to smart contract<br />hacks since 2021.
             </span>
           </div>
@@ -34,11 +34,11 @@ export const NeedForCerifySection = () => {
           <img
             src="/figmaAssets/circle.png"
             alt="83%"
-            className="w-[220px] md:w-[320px] h-[220px] md:h-[320px] object-contain"
+            className="w-[200px] md:w-[320px] h-[200px] md:h-[320px] object-contain"
           />
           <div className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full pointer-events-none">
-            <span className="font-semibold text-[#2C00CA] text-[3rem] md:text-[4rem] [font-family:'Inter',Helvetica] mt-[5px] md:mt-[20px]">83%</span>
-            <span className="font-semibold text-[#2C00CA] text-base md:text-m text-center mt-2 [font-family:'Inter',Helvetica]">
+            <span className="font-semibold text-[#2C00CA] text-[2rem] md:text-[4rem] [font-family:'Inter',Helvetica] mt-[5px] md:mt-[20px]">83%</span>
+            <span className="font-semibold text-[#2C00CA] text-xs md:text-base text-center mt-2 [font-family:'Inter',Helvetica]">
               of smart contracts contain at<br />least one critical or high-<br />severity vulnerability
             </span>
           </div>
@@ -48,11 +48,11 @@ export const NeedForCerifySection = () => {
           <img
             src="/figmaAssets/circle.png"
             alt=">60%"
-            className="w-[220px] md:w-[320px] h-[220px] md:h-[320px] object-contain"
+            className="w-[200px] md:w-[320px] h-[200px] md:h-[320px] object-contain"
           />
           <div className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-full pointer-events-none">
-            <span className="font-semibold text-[#2C00CA] text-[3rem] md:text-[4rem] [font-family:'Inter',Helvetica] mt-[5px] md:mt-[20px]">&gt;60%</span>
-            <span className="font-semibold text-[#2C00CA] text-base md:text-m text-center mt-2 [font-family:'Inter',Helvetica]">
+            <span className="font-semibold text-[#2C00CA] text-[2rem] md:text-[4rem] [font-family:'Inter',Helvetica] mt-[5px] md:mt-[20px]">&gt;60%</span>
+            <span className="font-semibold text-[#2C00CA] text-xs md:text-base text-center mt-2 [font-family:'Inter',Helvetica]">
               of hacks could have been<br />prevented with better<br />auditing and patching tools
             </span>
           </div>
